@@ -12,15 +12,15 @@ import SocialMedia from "./pages/SocialMedia/SocialMedia"; // To add a new page,
 
 
 function App() {
-
-  const [page, setPage]: [JSX.Element, any] = useState(<Home />); // Current toggled page. Home'll be the default one.
-
+  const switchPageHandler = (newValue: JSX.Element) => setPage(newValue); // This allows the child component <Home /> to modify it's parent's page state. In short, the get started button will switch to the ebooks tab.
+  const [page, setPage]: [JSX.Element, any] = useState(<Home switchToEbooksHandler={switchPageHandler}/>); // Current toggled page. Home'll be the default one.
+  
   return (
     <div>
       <header id="Header">
         <h1>Lipsum Dosimet</h1>
         <div> 
-          <HeaderButton title="Home" action={() => setPage(<Home />)}/>
+          <HeaderButton title="Home" action={() => setPage(<Home switchToEbooksHandler={switchPageHandler}/>)}/>
           <HeaderButton title="Ebooks" action={() => setPage(<Ebooks />)}/>
           <HeaderButton title="Info" action={() => setPage(<Info />)} />
           <HeaderButton title="Social Media" action={() => setPage(<SocialMedia />)} />

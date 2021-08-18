@@ -1,4 +1,5 @@
 import './Ebooks.css';
+import Ebook from "../../components/Ebook/Ebook";
 
 const Ebooks = () => {
   return (

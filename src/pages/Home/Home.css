@@ -1,1 +1,10 @@
-.Home {}
+#Home-greeting {
+   text-align: center;
+}
+#Home-greeting span {
+   color: var(--main-theme);
+   font-weight: bold;
+}
+#Home-greeting h2 {
+   font-weight: 100;
+}
