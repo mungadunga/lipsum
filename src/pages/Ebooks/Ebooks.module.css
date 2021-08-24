@@ -1,0 +1,19 @@
+#ebooksContainer {
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+}
+@media(max-width: 1200px){
+   #ebooksContainer { grid-template-columns: repeat(6, 1fr); }
+}
+@media(max-width: 900px){
+   #ebooksContainer { grid-template-columns: repeat(4, 1fr); }
+}
+@media(max-width: 600px){
+   #ebooksContainer { grid-template-columns: repeat(3, 1fr); }
+}
+@media(max-width: 450px){
+   #ebooksContainer { grid-template-columns: repeat(2, 1fr); }
+}
+.Ebooks h2 {
+   margin: 1em;
+}

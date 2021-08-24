@@ -1,4 +1,4 @@
-.HeaderButtonP:hover {
+.HeaderButton:hover {
    cursor: pointer;
    text-decoration: underline;
 }

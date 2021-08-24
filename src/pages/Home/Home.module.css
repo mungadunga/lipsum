@@ -1,10 +1,10 @@
-#Home-greeting {
+#HomeGreeting {
    text-align: center;
 }
-#Home-greeting span {
+#HomeGreeting span {
    color: var(--main-theme);
    font-weight: bold;
 }
-#Home-greeting h2 {
+#HomeGreeting h2 {
    font-weight: 100;
 }

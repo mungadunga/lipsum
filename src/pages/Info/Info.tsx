@@ -1,8 +1,8 @@
-import './Info.css';
+import styles from './Info.module.css';
 
 const Info = () => {
   return (
-    <div className="Info">
+    <div className={styles.Info}>
       <p>Hello world from Info!</p>
     </div>
   )

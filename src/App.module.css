@@ -10,7 +10,7 @@
    justify-content: space-evenly;
 }
 @media(max-width: 350px){
-   #Header-container * {
+   #HeaderContainer * {
       font-size: 0.85em;
    }
 }

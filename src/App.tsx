@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from "react";
-import "./App.css";
+import styles from "./App.module.css";
 
 // components 
 import HeaderButton from "./components/HeaderButton/HeaderButton";
@@ -17,9 +17,9 @@ function App() {
   
   return (
     <div>
-      <header id="Header">
+      <header id={styles.Header}>
         <h1>Lipsum Dosimet</h1>
-        <div id="Header-container"> 
+        <div id={styles.HeaderContainer}> 
           <HeaderButton title="Home" action={() => setPage(<Home switchToEbooksHandler={switchPageHandler}/>)}/>
           <HeaderButton title="Ebooks" action={() => setPage(<Ebooks />)}/>
           <HeaderButton title="Info" action={() => setPage(<Info />)} />
