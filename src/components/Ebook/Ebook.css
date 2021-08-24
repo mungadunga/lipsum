@@ -1,1 +1,25 @@
-.Ebook {}
+#Ebook {
+   margin: 1em;
+   border: 2px solid black;
+}
+#Ebook:hover {
+   background-color:rgba(150,150,150,0.5);
+   user-select: none;
+}
+#Ebook * {
+   margin: 0;
+   padding: 0;
+}
+#Ebook img {
+   display: block;
+   margin: 1em auto;
+   width: 80%;
+}
+#Ebook-author {
+   color: gray;
+}
+#Ebook-title, #Ebook-author, #Ebook-shortDescription { text-align: center; }
+#Ebook-title, #Ebook-author, #Ebook-lang { margin: 0; }
+#Ebook-shortDescription {
+   margin: 1em;
+}

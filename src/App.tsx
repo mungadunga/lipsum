@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import "./App.css";
 
 // components 
@@ -13,13 +13,13 @@ import SocialMedia from "./pages/SocialMedia/SocialMedia"; // To add a new page,
 
 function App() {
   const switchPageHandler = (newValue: JSX.Element) => setPage(newValue); // This allows the child component <Home /> to modify it's parent's page state. In short, the get started button will switch to the ebooks tab.
-  const [page, setPage]: [JSX.Element, any] = useState(<Home switchToEbooksHandler={switchPageHandler}/>); // Current toggled page. Home'll be the default one.
+  const [page, setPage]: [JSX.Element, any] = useState(<Home switchToEbooksHandler={switchPageHandler} />); // Current toggled page. Home'll be the default one.
   
   return (
     <div>
       <header id="Header">
         <h1>Lipsum Dosimet</h1>
-        <div> 
+        <div id="Header-container"> 
           <HeaderButton title="Home" action={() => setPage(<Home switchToEbooksHandler={switchPageHandler}/>)}/>
           <HeaderButton title="Ebooks" action={() => setPage(<Ebooks />)}/>
           <HeaderButton title="Info" action={() => setPage(<Info />)} />

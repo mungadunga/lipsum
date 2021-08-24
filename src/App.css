@@ -9,3 +9,8 @@
    flex-direction: row;
    justify-content: space-evenly;
 }
+@media(max-width: 350px){
+   #Header-container * {
+      font-size: 0.85em;
+   }
+}
