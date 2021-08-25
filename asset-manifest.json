@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/lipsum/static/css/main.4384f5e4.chunk.css",
+    "main.js": "/lipsum/static/js/main.7345224d.chunk.js",
+    "main.js.map": "/lipsum/static/js/main.7345224d.chunk.js.map",
+    "runtime-main.js": "/lipsum/static/js/runtime-main.b14456bd.js",
+    "runtime-main.js.map": "/lipsum/static/js/runtime-main.b14456bd.js.map",
+    "static/js/2.38cc302e.chunk.js": "/lipsum/static/js/2.38cc302e.chunk.js",
+    "static/js/2.38cc302e.chunk.js.map": "/lipsum/static/js/2.38cc302e.chunk.js.map",
+    "index.html": "/lipsum/index.html",
+    "static/css/main.4384f5e4.chunk.css.map": "/lipsum/static/css/main.4384f5e4.chunk.css.map",
+    "static/js/2.38cc302e.chunk.js.LICENSE.txt": "/lipsum/static/js/2.38cc302e.chunk.js.LICENSE.txt",
+    "static/media/HarryPotter_Cover.81578931.jpg": "/lipsum/static/media/HarryPotter_Cover.81578931.jpg",
+    "static/media/HarryPotter_Kindle.e9ad877a.mobi": "/lipsum/static/media/HarryPotter_Kindle.e9ad877a.mobi",
+    "static/media/HarryPotter_PDF.dfe4c572.pdf": "/lipsum/static/media/HarryPotter_PDF.dfe4c572.pdf",
+    "static/media/NewYork2140_Cover.9ef8c87f.jpg": "/lipsum/static/media/NewYork2140_Cover.9ef8c87f.jpg",
+    "static/media/NewYork2140_Kindle.d9e96903.mobi": "/lipsum/static/media/NewYork2140_Kindle.d9e96903.mobi",
+    "static/media/NewYork2140_PDF.12493de7.pdf": "/lipsum/static/media/NewYork2140_PDF.12493de7.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b14456bd.js",
+    "static/js/2.38cc302e.chunk.js",
+    "static/css/main.4384f5e4.chunk.css",
+    "static/js/main.7345224d.chunk.js"
+  ]
+}
