@@ -2,7 +2,7 @@ import HarryPotter_Cover from "./HarryPotter_Cover.jpg";
 import HarryPotter_PDF from "./HarryPotter_PDF.pdf";
 import HarryPotter_Kindle from "./HarryPotter_Kindle.mobi";
 
-export const HarryPotter = {
+const HarryPotter = {
    title: "Harry Potter Saga",
    author: "J.K. Rowling",
    category: "Fantasy Fiction",

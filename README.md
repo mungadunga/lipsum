@@ -3,36 +3,52 @@
 My goal is to deliver free eBooks to anyone on the internet safely and without ads. 
 If you are interested in collaborating with me, please contact me!
 
-To add an eBook:
+<br>
 
-1. Go to src/assets/eBooks
+## How to add an eBook
 
-2. Make a new folder (name it by the name of your book)
+<br>
 
-3. Add four files in there: one PDF file, one MOBI file, one image (book cover) and an empty typescript file
+Let's say you want to add Harry Potter to this website:
 
-4. Add the details of your book in the typescript file.
+<br>
 
-5. It should look like this:
+1. Go to src/assets/eBooks and add a new folder named `HarryPotter`
+
+2. Add four files in there:
 
 ```ts
-import NewYork2140_Cover from "./NewYork2140_Cover.jpg";
-import NewYork2140_PDF from "./NewYork2140_PDF.pdf";
-import NewYork2140_Kindle from "./NewYork2140_Kindle.mobi";
+HarryPotter_Cover.jpg // Cover of the book
+HarryPotter_PDF.pdf // PDF version of the book
+HarryPotter_Kindle.mobi // Kindle version of the book. To convert a PDF file to MOBI, head to https://cloudconvert.com
 
-const NewYork2140 = {
-  title: "New York 2140",
-  author: "Kim Stanley Robinson",
-  category: "Science Fiction & Fantasy",
+HarryPotter.ts // For now, this file should be empty
+```
+
+3. Add three imports at the top of `HarryPotter.ts`
+
+```ts
+import HarryPotter_Cover from "./HarryPotter_Cover.jpg";
+import HarryPotter_PDF from "./HarryPotter_PDF.pdf";
+import HarryPotter_Kindle from "./HarryPotter_Kindle.mobi";
+```
+
+4. And now, create a `HarryPotter` object and fill it with details about your book
+
+```ts
+const HarryPotter = {
+  title: "Harry Potter Saga",
+  author: "J.K. Rowling",
+  category: "Fantasy Fiction",
   language: "english",
-  description: "description...",
-  summary: "summary...",
-  cover: NewYork2140_Cover,
-  downloadPDF: NewYork2140_PDF,
-  downloadKindle: NewYork2140_Kindle,
-};
+  description: "...",
+  summary: "...",
+  cover: HarryPotter_Cover, // link your imported files here
+  downloadPDF: HarryPotter_PDF,
+  downloadKindle: HarryPotter_Kindle,
+}
 
 export default NewYork2140;
 ```
 
-6. You're done!
+5. Go to src/assets/library.ts and import your `HarryPotter` object. Finally, add it in the LIBRARY array and you're done!

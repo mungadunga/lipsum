@@ -1,1 +1,39 @@
-.SearchBar {}
+.SearchBar {
+   margin: 1em;
+}
+@media (max-width: 600px){
+   #input, #select {
+      width: auto;
+   }
+}
+#input, #input:focus {
+   transition: .1s;
+   padding: .5em;
+}
+#input:focus {
+   box-shadow: 0 0 0 2pt var(--main-theme);
+}
+@media (max-width: 600px){
+   #input { width: 10em; }
+}
+#select {
+   padding: .43em;
+}
+#hr { border: 1px solid black; }
+#button {
+   padding: 0.5em;
+   background-color: white;
+}
+#button:hover {
+   background-color: rgb(230, 230, 230);
+   cursor: pointer;
+}
+#button:active {
+   background-color: rgb(206, 206, 206);
+}
+.element {
+   border: 2px solid black;
+   margin-right: 1em;
+   margin-top: 1em;
+   outline: none;
+}

@@ -1,26 +1,25 @@
+import { useRef, useState } from 'react';
 import styles from './EbooksPage.module.css';
-import Ebook from "../../components/Ebook/Ebook";
 
-import LIBRARY from "../../assets/library";
+import Library from "../../components/Library/Library";
+import SearchBar from '../../components/SearchBar/SearchBar';
 
 const EbooksPage = () => {
+
+  const [filter, setFilter] = useState("");
+  const [filterKeyword, setFilterKeyword] = useState("title");
+  const [sort, setSort] = useState(null);
+
+  const handleInputChange = ({target}) => setFilter(target.value);
+  const handleSelectChange = ({target}) => setFilterKeyword(target.value);
+  const handleSortClick = () => setSort(!sort);
+
   return (
     <div className={styles.ebooksPage}>
-      <h2>Ebooks:</h2>
+      <h2 id={styles.title}>Ebooks</h2>
+      <SearchBar onInputChange={handleInputChange} onSelectChange={handleSelectChange} onSortClick={handleSortClick}/>
       <div id={styles.ebooksPageContainer}>
-        {LIBRARY.map(elem => (
-          <Ebook 
-            title={elem.title}
-            author={elem.author}
-            category={elem.category}
-            language={elem.language}
-            description={elem.description}
-            summary={elem.summary}
-            cover={elem.cover}
-            downloadPDF={elem.downloadPDF}
-            downloadKindle={elem.downloadKindle}
-          />
-        ))}
+        <Library filter={filter} filterKeyword={filterKeyword} sort={sort}/>
       </div>
     </div>
   )

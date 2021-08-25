@@ -14,6 +14,6 @@
 @media(max-width: 450px){
    #ebooksPageContainer { grid-template-columns: repeat(2, 1fr); }
 }
-.ebooksPage h2 {
+#title {
    margin: 1em;
 }
