@@ -6,14 +6,13 @@ import mS from './Modal.module.css';
 interface props {
   title: string;
   author: string;
-  lang: string;
-  img: any;
-  shortDescription: string;
-  longDescription: string;
-  subject?: string;
-  releaseDate?: string
-  downloadPDF?: any;
-  downloadKindle?: any;
+  category: string;
+  language: string;
+  description: string;
+  summary: string;
+  cover: any;
+  downloadPDF: any;
+  downloadKindle: any;
 }
 
 const Ebook = (props: props) => {
@@ -27,26 +26,36 @@ const Ebook = (props: props) => {
         <>
           <h1>{props.title}</h1>
           <em><h2>{props.author}</h2></em>
-          <br />
+          <br /><hr /><br />
         </>
         <>
-          <h3>Short Description:</h3>
-          <p>{props.shortDescription}</p>
+          <h3>{props.category ? "Category" : null}</h3>
+          <p>{null || props.category}</p>
+          {props.category && <br />}
+
+          <h3>Description</h3>
+          <p>{props.description}</p>
           <br />
-          <h3>Long Description:</h3>
-          {/* <p>Subject: {props.subject || "..."}</p> */}
-          <p>{props.longDescription}</p>
+
+          <h3>Summary</h3>
+          {/* <p>category: {props.category || "..."}</p> */}
+          <p>{props.summary}</p>
           <br />
+
+          <h3>Language:</h3>
+          <p>{props.language[0].toUpperCase() + [...props.language].slice(1).join("")}</p>
+          <br />
+          
+          <hr /><br />
         </>
         <>
           <h1>Download</h1>
-          PDF:
           <br />
-          <a href={props.downloadPDF} download={props.downloadPDF}><button>Download</button></a>
+
+          PDF: <a href={props.downloadPDF} download={props.downloadPDF}><button>Download</button></a>
           <br />
-          Kindle: 
-          <br />
-          <a href={props.downloadKindle} download={props.downloadPDF}><button>Download</button></a>
+
+          Kindle: <a href={props.downloadKindle} download={props.downloadKindle}><button>Download</button></a>
         </>
       </div>
     </div>
@@ -56,12 +65,11 @@ const Ebook = (props: props) => {
 
   return (
     <div id={eS.ebook} onClick={() => modalState ? null : setModalState(true)}>
-      <h5 id={eS.ebookLang}>{[...props.lang].slice(0, 2).join("").toUpperCase()}</h5>
+      <h5 id={eS.ebookLang}>{[...props.language].slice(0, 2).join("").toUpperCase()}</h5>
       <h3 id={eS.ebookTitle}>{props.title}</h3>
       <em><h4 id={eS.ebookAuthor}>{props.author}</h4></em>
-      <h6 id={eS.ebookReleaseDate}>{props.releaseDate ? props.releaseDate : null}</h6>
-      <img src={props.img} alt={props.title} />
-      <h4 id={eS.ebookShortDescription}>{props.shortDescription}</h4>
+      <img src={props.cover} alt={props.title} />
+      <h4 id={eS.ebookDescription}>{props.description.substring(0, 50) + "..."}</h4>
       {modalState && Modal}
     </div>
   )

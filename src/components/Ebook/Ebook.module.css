@@ -18,8 +18,8 @@
 #ebookAuthor {
    color: gray;
 }
-#ebookTitle, #ebookAuthor, #ebookShortDescription { text-align: center; }
+#ebookTitle, #ebookAuthor, #ebookDescription { text-align: center; }
 #ebookTitle, #ebookAuthor, #ebookLang { margin: 0; }
-#ebookShortDescription {
+#ebookDescription {
    margin: 1em;
 }
