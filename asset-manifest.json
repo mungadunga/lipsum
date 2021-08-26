@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lipsum/static/css/main.18079d71.chunk.css",
-    "main.js": "/lipsum/static/js/main.76a9c079.chunk.js",
-    "main.js.map": "/lipsum/static/js/main.76a9c079.chunk.js.map",
+    "main.js": "/lipsum/static/js/main.d4978a8b.chunk.js",
+    "main.js.map": "/lipsum/static/js/main.d4978a8b.chunk.js.map",
     "runtime-main.js": "/lipsum/static/js/runtime-main.b14456bd.js",
     "runtime-main.js.map": "/lipsum/static/js/runtime-main.b14456bd.js.map",
     "static/js/2.f9d2fa10.chunk.js": "/lipsum/static/js/2.f9d2fa10.chunk.js",
@@ -15,12 +15,15 @@
     "static/media/HarryPotter_PDF.dfe4c572.pdf": "/lipsum/static/media/HarryPotter_PDF.dfe4c572.pdf",
     "static/media/NewYork2140_Cover.9ef8c87f.jpg": "/lipsum/static/media/NewYork2140_Cover.9ef8c87f.jpg",
     "static/media/NewYork2140_Kindle.d9e96903.mobi": "/lipsum/static/media/NewYork2140_Kindle.d9e96903.mobi",
-    "static/media/NewYork2140_PDF.12493de7.pdf": "/lipsum/static/media/NewYork2140_PDF.12493de7.pdf"
+    "static/media/NewYork2140_PDF.12493de7.pdf": "/lipsum/static/media/NewYork2140_PDF.12493de7.pdf",
+    "static/media/TheMazeRunner_Cover.fc281f16.jpg": "/lipsum/static/media/TheMazeRunner_Cover.fc281f16.jpg",
+    "static/media/TheMazeRunner_Kindle.f25e4fc3.mobi": "/lipsum/static/media/TheMazeRunner_Kindle.f25e4fc3.mobi",
+    "static/media/TheMazeRunner_PDF.a920e89d.pdf": "/lipsum/static/media/TheMazeRunner_PDF.a920e89d.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.b14456bd.js",
     "static/js/2.f9d2fa10.chunk.js",
     "static/css/main.18079d71.chunk.css",
-    "static/js/main.76a9c079.chunk.js"
+    "static/js/main.d4978a8b.chunk.js"
   ]
 }
