@@ -1,5 +1,6 @@
 /* eslint-disable */
-import React, { useState } from 'react';
+// essentials
+import { useState } from 'react';
 import eS from './Ebook.module.css';
 import mS from './Modal.module.css';
 

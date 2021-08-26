@@ -1,14 +1,14 @@
-import React, {useState} from 'react';
+// essentials
 import styles from './Library.module.css';
 
-import Ebook from '../Ebook/Ebook';
-import LIBRARY from '../../assets/library';
-import { useEffect } from 'react';
+// components 
+import LIBRARY from '../../assets/library'; // ebook data
+import Ebook from '../Ebook/Ebook'; // ebook component
 
 interface props {
   filter: string;
   filterKeyword: string;
-  sort: true | false | null;
+  sort: boolean | null;
 }
 
 const Library = (props: props) => {

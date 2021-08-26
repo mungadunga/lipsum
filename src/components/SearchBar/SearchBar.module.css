@@ -19,7 +19,15 @@
 #select {
    padding: .43em;
 }
-#hr { border: 1px solid black; }
+#hr { 
+   border: 1px solid black;
+   background-color: black;
+}
+@media (min-width: 600px){
+   #hr {
+      display: none;
+   }
+}
 #button {
    padding: 0.5em;
    background-color: white;

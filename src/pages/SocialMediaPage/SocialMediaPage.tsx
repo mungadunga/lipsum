@@ -1,3 +1,4 @@
+// essentials
 import styles from './SocialMediaPage.module.css';
 
 const SocialMediaPage = () => {

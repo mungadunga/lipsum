@@ -1,6 +1,7 @@
 {
   "name": "lipsum-dosimet",
-  "version": "0.4.0",
+  "version": "0.5.0",
+  "homepage": "https://mungadunga.github.io/lipsum",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -12,6 +13,7 @@
     "@types/react-dom": "^17.0.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-embed-gist": "^1.0.11",
     "react-scripts": "4.0.3",
     "typescript": "^4.3.5",
     "web-vitals": "^1.1.2"
@@ -20,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +46,7 @@
   },
   "devDependencies": {
     "@types/webpack-env": "^1.16.2",
-    "generate-react-cli": "^7.0.4"
+    "generate-react-cli": "^7.0.4",
+    "gh-pages": "^3.2.3"
   }
 }

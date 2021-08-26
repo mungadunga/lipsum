@@ -1,5 +1,8 @@
+// essentials
 import styles from './HomePage.module.css';
-import Ebooks from "../EbooksPage/EbooksPage";
+
+// pages 
+import EbooksPage from "../EbooksPage/EbooksPage";
 
 interface IProps {
   switchToEbooksHandler: Function;
@@ -7,7 +10,7 @@ interface IProps {
 
 const HomePage = (props: IProps) => {
 
-  const switchToEbooksHandler = (): void => props.switchToEbooksHandler(<Ebooks />);
+  const switchToEbooksHandler = (): void => props.switchToEbooksHandler(<EbooksPage />);
 
   return (
     <div className={styles.home}>

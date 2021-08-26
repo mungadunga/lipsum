@@ -1,5 +1,8 @@
-import React, {useState, useEffect, useRef} from "react";
+import { useState } from "react";
+
+// essentials
 import styles from "./App.module.css";
+import "./global.css";
 
 // components 
 import HeaderButton from "./components/HeaderButton/HeaderButton";
@@ -29,8 +32,12 @@ function App() {
       <div>
         {page}
       </div>
+      {/* <footer>
+        ...
+      </footer> */}
     </div>
   )
 }
+
 
 export default App;

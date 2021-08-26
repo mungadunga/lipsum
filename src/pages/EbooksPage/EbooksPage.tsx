@@ -1,6 +1,9 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
+
+// essentials
 import styles from './EbooksPage.module.css';
 
+// components
 import Library from "../../components/Library/Library";
 import SearchBar from '../../components/SearchBar/SearchBar';
 
@@ -17,7 +20,7 @@ const EbooksPage = () => {
   return (
     <div className={styles.ebooksPage}>
       <h2 id={styles.title}>Ebooks</h2>
-      <SearchBar onInputChange={handleInputChange} onSelectChange={handleSelectChange} onSortClick={handleSortClick}/>
+      <SearchBar onInputChange={handleInputChange} onSelectChange={handleSelectChange} onSortClick={handleSortClick} sort={sort}/>
       <div id={styles.ebooksPageContainer}>
         <Library filter={filter} filterKeyword={filterKeyword} sort={sort}/>
       </div>
