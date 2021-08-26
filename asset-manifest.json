@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/lipsum/static/css/main.4384f5e4.chunk.css",
-    "main.js": "/lipsum/static/js/main.7345224d.chunk.js",
-    "main.js.map": "/lipsum/static/js/main.7345224d.chunk.js.map",
+    "main.css": "/lipsum/static/css/main.18079d71.chunk.css",
+    "main.js": "/lipsum/static/js/main.76a9c079.chunk.js",
+    "main.js.map": "/lipsum/static/js/main.76a9c079.chunk.js.map",
     "runtime-main.js": "/lipsum/static/js/runtime-main.b14456bd.js",
     "runtime-main.js.map": "/lipsum/static/js/runtime-main.b14456bd.js.map",
-    "static/js/2.38cc302e.chunk.js": "/lipsum/static/js/2.38cc302e.chunk.js",
-    "static/js/2.38cc302e.chunk.js.map": "/lipsum/static/js/2.38cc302e.chunk.js.map",
+    "static/js/2.f9d2fa10.chunk.js": "/lipsum/static/js/2.f9d2fa10.chunk.js",
+    "static/js/2.f9d2fa10.chunk.js.map": "/lipsum/static/js/2.f9d2fa10.chunk.js.map",
     "index.html": "/lipsum/index.html",
-    "static/css/main.4384f5e4.chunk.css.map": "/lipsum/static/css/main.4384f5e4.chunk.css.map",
-    "static/js/2.38cc302e.chunk.js.LICENSE.txt": "/lipsum/static/js/2.38cc302e.chunk.js.LICENSE.txt",
+    "static/css/main.18079d71.chunk.css.map": "/lipsum/static/css/main.18079d71.chunk.css.map",
+    "static/js/2.f9d2fa10.chunk.js.LICENSE.txt": "/lipsum/static/js/2.f9d2fa10.chunk.js.LICENSE.txt",
     "static/media/HarryPotter_Cover.81578931.jpg": "/lipsum/static/media/HarryPotter_Cover.81578931.jpg",
     "static/media/HarryPotter_Kindle.e9ad877a.mobi": "/lipsum/static/media/HarryPotter_Kindle.e9ad877a.mobi",
     "static/media/HarryPotter_PDF.dfe4c572.pdf": "/lipsum/static/media/HarryPotter_PDF.dfe4c572.pdf",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b14456bd.js",
-    "static/js/2.38cc302e.chunk.js",
-    "static/css/main.4384f5e4.chunk.css",
-    "static/js/main.7345224d.chunk.js"
+    "static/js/2.f9d2fa10.chunk.js",
+    "static/css/main.18079d71.chunk.css",
+    "static/js/main.76a9c079.chunk.js"
   ]
 }
