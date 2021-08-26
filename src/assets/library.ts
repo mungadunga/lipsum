@@ -1,5 +1,6 @@
 import NewYork2140 from "./eBooks//NewYork2140/NewYork2140";
 import HarryPotter from "./eBooks/HarryPotter/HarryPotter";
+import TheMazeRunner from "./eBooks/TheMazeRunner/TheMazeRunner";
 
 interface iBook {
    title: string;
@@ -15,7 +16,8 @@ interface iBook {
 
 const LIBRARY: iBook[] = [
    NewYork2140,
-   HarryPotter
+   HarryPotter,
+   TheMazeRunner
 ]
 
 export default LIBRARY;
