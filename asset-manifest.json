@@ -1,29 +1,38 @@
 {
   "files": {
-    "main.css": "/lipsum/static/css/main.18079d71.chunk.css",
-    "main.js": "/lipsum/static/js/main.d4978a8b.chunk.js",
-    "main.js.map": "/lipsum/static/js/main.d4978a8b.chunk.js.map",
+    "main.css": "/lipsum/static/css/main.3dbbab8f.chunk.css",
+    "main.js": "/lipsum/static/js/main.cde3e0b9.chunk.js",
+    "main.js.map": "/lipsum/static/js/main.cde3e0b9.chunk.js.map",
     "runtime-main.js": "/lipsum/static/js/runtime-main.b14456bd.js",
     "runtime-main.js.map": "/lipsum/static/js/runtime-main.b14456bd.js.map",
-    "static/js/2.f9d2fa10.chunk.js": "/lipsum/static/js/2.f9d2fa10.chunk.js",
-    "static/js/2.f9d2fa10.chunk.js.map": "/lipsum/static/js/2.f9d2fa10.chunk.js.map",
+    "static/js/2.9b1a10fe.chunk.js": "/lipsum/static/js/2.9b1a10fe.chunk.js",
+    "static/js/2.9b1a10fe.chunk.js.map": "/lipsum/static/js/2.9b1a10fe.chunk.js.map",
     "index.html": "/lipsum/index.html",
-    "static/css/main.18079d71.chunk.css.map": "/lipsum/static/css/main.18079d71.chunk.css.map",
-    "static/js/2.f9d2fa10.chunk.js.LICENSE.txt": "/lipsum/static/js/2.f9d2fa10.chunk.js.LICENSE.txt",
+    "static/css/main.3dbbab8f.chunk.css.map": "/lipsum/static/css/main.3dbbab8f.chunk.css.map",
+    "static/js/2.9b1a10fe.chunk.js.LICENSE.txt": "/lipsum/static/js/2.9b1a10fe.chunk.js.LICENSE.txt",
+    "static/media/CrankPalace_Cover.2c36321c.jpg": "/lipsum/static/media/CrankPalace_Cover.2c36321c.jpg",
+    "static/media/CrankPalace_Kindle.97284a56.mobi": "/lipsum/static/media/CrankPalace_Kindle.97284a56.mobi",
+    "static/media/CrankPalace_PDF.9f403a6b.pdf": "/lipsum/static/media/CrankPalace_PDF.9f403a6b.pdf",
     "static/media/HarryPotter_Cover.81578931.jpg": "/lipsum/static/media/HarryPotter_Cover.81578931.jpg",
     "static/media/HarryPotter_Kindle.e9ad877a.mobi": "/lipsum/static/media/HarryPotter_Kindle.e9ad877a.mobi",
     "static/media/HarryPotter_PDF.dfe4c572.pdf": "/lipsum/static/media/HarryPotter_PDF.dfe4c572.pdf",
     "static/media/NewYork2140_Cover.9ef8c87f.jpg": "/lipsum/static/media/NewYork2140_Cover.9ef8c87f.jpg",
     "static/media/NewYork2140_Kindle.d9e96903.mobi": "/lipsum/static/media/NewYork2140_Kindle.d9e96903.mobi",
     "static/media/NewYork2140_PDF.12493de7.pdf": "/lipsum/static/media/NewYork2140_PDF.12493de7.pdf",
+    "static/media/TheDeathCure_Cover.2b0ec000.jpg": "/lipsum/static/media/TheDeathCure_Cover.2b0ec000.jpg",
+    "static/media/TheDeathCure_Kindle.724688f6.mobi": "/lipsum/static/media/TheDeathCure_Kindle.724688f6.mobi",
+    "static/media/TheDeathCure_PDF.19bc51cd.pdf": "/lipsum/static/media/TheDeathCure_PDF.19bc51cd.pdf",
     "static/media/TheMazeRunner_Cover.fc281f16.jpg": "/lipsum/static/media/TheMazeRunner_Cover.fc281f16.jpg",
     "static/media/TheMazeRunner_Kindle.f25e4fc3.mobi": "/lipsum/static/media/TheMazeRunner_Kindle.f25e4fc3.mobi",
-    "static/media/TheMazeRunner_PDF.a920e89d.pdf": "/lipsum/static/media/TheMazeRunner_PDF.a920e89d.pdf"
+    "static/media/TheMazeRunner_PDF.a920e89d.pdf": "/lipsum/static/media/TheMazeRunner_PDF.a920e89d.pdf",
+    "static/media/TheScorchTrials_Cover.756af815.jpg": "/lipsum/static/media/TheScorchTrials_Cover.756af815.jpg",
+    "static/media/TheScorchTrials_Kindle.00affae1.mobi": "/lipsum/static/media/TheScorchTrials_Kindle.00affae1.mobi",
+    "static/media/TheScorchTrials_PDF.54460732.pdf": "/lipsum/static/media/TheScorchTrials_PDF.54460732.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.b14456bd.js",
-    "static/js/2.f9d2fa10.chunk.js",
-    "static/css/main.18079d71.chunk.css",
-    "static/js/main.d4978a8b.chunk.js"
+    "static/js/2.9b1a10fe.chunk.js",
+    "static/css/main.3dbbab8f.chunk.css",
+    "static/js/main.cde3e0b9.chunk.js"
   ]
 }
