@@ -48,7 +48,7 @@ const HarryPotter = {
   downloadKindle: HarryPotter_Kindle,
 }
 
-export default NewYork2140;
+export default HarryPotter;
 ```
 
 5. Go to src/assets/library.ts and import your `HarryPotter` object. Finally, add it in the LIBRARY array and you're done!

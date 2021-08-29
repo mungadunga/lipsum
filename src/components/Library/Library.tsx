@@ -1,4 +1,5 @@
 // essentials
+import { useState } from 'react';
 import styles from './Library.module.css';
 
 // components 
@@ -7,16 +8,28 @@ import Ebook from '../Ebook/Ebook'; // ebook component
 
 interface props {
   filter: string;
-  filterKeyword: string;
+  keyword: string;
   sort: boolean | null;
 }
 
 const Library = (props: props) => {
 
+  const [loading, setLoading] = useState(true);
+  
+  const LoadingScreen = () => {
+    let loadingScreen = <p className={styles.loading}>Loading...</p>;
+    return (
+      <>
+        {loading ? loadingScreen : null}
+      </>
+    )
+  }
+
   return (
     <>
+      <LoadingScreen />
       {
-        LIBRARY.filter(elem => elem[props.filterKeyword].toLowerCase()?.includes(props.filter.toLowerCase())).sort((a, b) => props.sort ? ('' + a[props.filterKeyword]).localeCompare(b[props.filterKeyword]) : null).map(elem => (
+        LIBRARY.filter(elem => elem[props.keyword].toLowerCase()?.includes(props.filter.toLowerCase())).sort((a, b) => props.sort ? ('' + a[props.keyword]).localeCompare(b[props.keyword]) : null).map(elem => (
           <Ebook
             title={elem.title}
             author={elem.author}
@@ -27,6 +40,7 @@ const Library = (props: props) => {
             cover={elem.cover}
             downloadPDF={elem.downloadPDF}
             downloadKindle={elem.downloadKindle}
+            onLoad={() => setLoading(false)}
           />
         ))
       }

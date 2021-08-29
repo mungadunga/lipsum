@@ -3,9 +3,11 @@ import { ChangeEventHandler, MouseEventHandler } from 'react';
 import styles from './SearchBar.module.css';
 
 interface props {
-  onInputChange: ChangeEventHandler<HTMLInputElement>;
-  onSelectChange: ChangeEventHandler<HTMLSelectElement>;
-  onSortClick: MouseEventHandler<HTMLButtonElement>;
+  onChange: {
+    onInputChange: ChangeEventHandler<HTMLInputElement>;
+    onSelectChange: ChangeEventHandler<HTMLSelectElement>;
+    onSortClick: MouseEventHandler<HTMLButtonElement>;
+  }
   sort: boolean | null;
 }
 
@@ -15,15 +17,15 @@ const SearchBar = (props: props) => {
     <>
       <div className={styles.SearchBar}>
         {/* search bar */}
-        <input type="text" onChange={props.onInputChange} className={styles.element} id={styles.input} placeholder="Search..."/>
+        <input type="text" onChange={props.onChange.onInputChange} className={styles.element} id={styles.input} placeholder="Search..."/>
         {/* dropdown menu  */}
-        <select onChange={props.onSelectChange} className={styles.element} id={styles.select}>
+        <select onChange={props.onChange.onSelectChange} className={styles.element} id={styles.select}>
           <option selected value="title">Title</option>
           <option value="author">Author</option>
           <option value="language">Language</option>
         </select>
         {/* sorting button  */}
-        <button onClick={props.onSortClick} className={styles.element} id={styles.button}>{props.sort ? "Alphabetical Sort Enabled" : "Alphabetical Sort Disabled"}</button>
+        <button onClick={props.onChange.onSortClick} className={styles.element} id={styles.button}>{props.sort ? "Alphabetical Sort Enabled" : "Alphabetical Sort Disabled"}</button>
       </div>
       <hr id={styles.hr}/>
     </>
