@@ -14,7 +14,6 @@ interface props {
   cover: any;
   downloadPDF: any;
   downloadKindle: any;
-  onLoad: any;
 }
 
 const Ebook = (props: props) => {
@@ -70,7 +69,7 @@ const Ebook = (props: props) => {
       <h5 id={eS.ebookLang}>{[...props.language].slice(0, 2).join("").toUpperCase()}</h5>
       <h3 id={eS.ebookTitle}>{props.title}</h3>
       <em><h4 id={eS.ebookAuthor}>{props.author}</h4></em>
-      <img src={props.cover} alt={props.title} onLoad={props.onLoad}/>
+      <img src={props.cover} alt={props.title}/>
       <h4 id={eS.ebookDescription}>{props.description.substring(0, 60) + "..."}</h4>
       {modalState && Modal}
     </div>

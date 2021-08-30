@@ -9,12 +9,25 @@ import SearchBar from '../../components/SearchBar/SearchBar';
 
 const EbooksPage = () => {
 
+  // search options
   const [filter, setFilter] = useState("");
   const [keyword, setKeyword] = useState("title");
   const [sort, setSort] = useState(null);
 
+  const [loading, setLoading] = useState(true);
+  
+  const LoadingScreen = () => {
+    let loadingScreen = <p className={styles.loading}>Loading...</p>;
+    return (
+      <>
+        {loading ? loadingScreen : null}
+      </>
+    )
+  }
+
   return (
-    <div className={styles.ebooksPage}>
+    <div className={styles.ebooksPage} onLoad={() => setLoading(false)}>
+      <LoadingScreen />
       <h2 id={styles.title}>Ebooks</h2>
       <SearchBar 
         onChange={{

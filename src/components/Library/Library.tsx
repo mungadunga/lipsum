@@ -14,20 +14,8 @@ interface props {
 
 const Library = (props: props) => {
 
-  const [loading, setLoading] = useState(true);
-  
-  const LoadingScreen = () => {
-    let loadingScreen = <p className={styles.loading}>Loading...</p>;
-    return (
-      <>
-        {loading ? loadingScreen : null}
-      </>
-    )
-  }
-
   return (
     <>
-      <LoadingScreen />
       {
         LIBRARY.filter(elem => elem[props.keyword].toLowerCase()?.includes(props.filter.toLowerCase())).sort((a, b) => props.sort ? ('' + a[props.keyword]).localeCompare(b[props.keyword]) : null).map(elem => (
           <Ebook
@@ -40,7 +28,6 @@ const Library = (props: props) => {
             cover={elem.cover}
             downloadPDF={elem.downloadPDF}
             downloadKindle={elem.downloadKindle}
-            onLoad={() => setLoading(false)}
           />
         ))
       }
