@@ -1,6 +1,6 @@
 {
   "name": "lipsum-dosimet",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "homepage": "https://mungadunga.github.io/lipsum",
   "private": true,
   "dependencies": {
