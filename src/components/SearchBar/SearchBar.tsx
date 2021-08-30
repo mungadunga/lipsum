@@ -19,8 +19,8 @@ const SearchBar = (props: props) => {
         {/* search bar */}
         <input type="text" onChange={props.onChange.onInputChange} className={styles.element} id={styles.input} placeholder="Search..."/>
         {/* dropdown menu  */}
-        <select onChange={props.onChange.onSelectChange} className={styles.element} id={styles.select}>
-          <option selected value="title">Title</option>
+        <select onChange={props.onChange.onSelectChange} defaultValue={"title"} className={styles.element} id={styles.select}>
+          <option value="title">Title</option>
           <option value="author">Author</option>
           <option value="language">Language</option>
         </select>

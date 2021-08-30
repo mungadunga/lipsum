@@ -14,6 +14,7 @@ interface props {
   cover: any;
   downloadPDF: any;
   downloadKindle: any;
+  downloadEPUB: any;
 }
 
 const Ebook = (props: props) => {
@@ -57,6 +58,10 @@ const Ebook = (props: props) => {
           <br />
 
           Kindle: <a href={props.downloadKindle} download={props.downloadKindle}><button>Download</button></a>
+          <br />
+
+          EPUB: <a href={props.downloadEPUB} download={props.downloadEPUB}><button>Download</button></a>
+          <br />
         </>
       </div>
     </div>

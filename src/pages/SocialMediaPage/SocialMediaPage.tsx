@@ -1,5 +1,5 @@
 // essentials
-import styles from './SocialMediaPage.module.css';
+// import styles from './SocialMediaPage.module.css';
 
 const SocialMediaPage = () => {
   return (

@@ -15,22 +15,27 @@ Let's say you want to add Harry Potter to this website:
 
 1. Go to src/assets/eBooks and add a new folder named `HarryPotter`
 
-2. Add four files in there:
+2. Add five files in there:
 
 ```ts
 HarryPotter_Cover.jpg // Cover of the book
-HarryPotter_PDF.pdf // PDF version of the book
-HarryPotter_Kindle.mobi // Kindle version of the book. To convert a PDF file to MOBI, head to https://cloudconvert.com
+HarryPotter_PDF.pdf // PDF version
+HarryPotter_Kindle.mobi // Kindle version
+HarryPotter_EPUB.epub // EPUB version
+
+// To convert a PDF file to MOBI or EPUB, head to https://cloudconvert.com
+
 
 HarryPotter.ts // For now, this file should be empty
 ```
 
-3. Add three imports at the top of `HarryPotter.ts`
+3. Add four imports at the top of `HarryPotter.ts`
 
 ```ts
 import HarryPotter_Cover from "./HarryPotter_Cover.jpg";
 import HarryPotter_PDF from "./HarryPotter_PDF.pdf";
 import HarryPotter_Kindle from "./HarryPotter_Kindle.mobi";
+import HarryPotter_EPUB from "./HarryPotter_EPUB.epub";
 ```
 
 4. And now, create a `HarryPotter` object and fill it with details about your book
@@ -43,9 +48,11 @@ const HarryPotter = {
   language: "english",
   description: "...",
   summary: "...",
-  cover: HarryPotter_Cover, // link your imported files here
+  /* link your imported files here */
+  cover: HarryPotter_Cover, 
   downloadPDF: HarryPotter_PDF,
   downloadKindle: HarryPotter_Kindle,
+  downloadEPUB: HarryPotter_EPUB,
 }
 
 export default HarryPotter;

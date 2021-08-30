@@ -1,33 +1,24 @@
-import { useState } from 'react';
-
 // essentials
+import { useRef, useState } from 'react';
 import styles from './EbooksPage.module.css';
 
 // components
 import Library from "../../components/Library/Library";
 import SearchBar from '../../components/SearchBar/SearchBar';
+import { useEffect } from 'react';
 
 const EbooksPage = () => {
+
+  const libraryRef = useRef(null);
 
   // search options
   const [filter, setFilter] = useState("");
   const [keyword, setKeyword] = useState("title");
   const [sort, setSort] = useState(null);
 
-  const [loading, setLoading] = useState(true);
-  
-  const LoadingScreen = () => {
-    let loadingScreen = <p className={styles.loading}>Loading...</p>;
-    return (
-      <>
-        {loading ? loadingScreen : null}
-      </>
-    )
-  }
-
   return (
-    <div className={styles.ebooksPage} onLoad={() => setLoading(false)}>
-      <LoadingScreen />
+    <>
+    <div className={styles.ebooksPage}>
       <h2 id={styles.title}>Ebooks</h2>
       <SearchBar 
         onChange={{
@@ -41,6 +32,7 @@ const EbooksPage = () => {
         <Library filter={filter} keyword={keyword} sort={sort}/>
       </div>
     </div>
+    </>
   )
 }
 

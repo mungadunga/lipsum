@@ -1,6 +1,6 @@
 // essentials
-import { useState } from 'react';
-import styles from './Library.module.css';
+// import { useState } from 'react';
+// import styles from './Library.module.css';
 
 // components 
 import LIBRARY from '../../assets/library'; // ebook data
@@ -28,6 +28,7 @@ const Library = (props: props) => {
             cover={elem.cover}
             downloadPDF={elem.downloadPDF}
             downloadKindle={elem.downloadKindle}
+            downloadEPUB={elem.downloadEPUB}
           />
         ))
       }
