@@ -1,0 +1,14 @@
+.Info {
+   margin: 2em;
+}
+.ReactEmbedGist {
+   width: 500px;
+}
+#goBackToTop {
+   text-align: center;
+   margin-top: 3em;
+}
+#goBackToTop:hover {
+   cursor: pointer;
+   text-decoration: underline;
+}

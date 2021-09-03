@@ -1,55 +1,46 @@
-# Lipsum Dosimet
+# Getting Started with Create React App
 
-This site is for personal use. If you own any of these books, and want to restrict it's visibility, then please DM me. However, I can assure you that this website is only used by a bunch of people. It is mainly for storing books that I read ( and liked ) and want to share with friends and family. Thanks for understanding!
-If you are interested in collaborating with me, please contact me!
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## How to add an eBook
+## Available Scripts
 
-Let's say you want to add Harry Potter to this website:
+In the project directory, you can run:
 
-1. Go to src/assets/eBooks and add a new folder named `HarryPotter`
+### `npm start`
 
-2. Add five files in there:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-```ts
-HarryPotter_Cover.jpg // Cover of the book
-HarryPotter_PDF.pdf // PDF version
-HarryPotter_Kindle.mobi // Kindle version
-HarryPotter_EPUB.epub // EPUB version
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-// To convert a PDF file to MOBI or EPUB, head to https://cloudconvert.com
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-HarryPotter.ts // For now, this file should be empty
-```
+### `npm run build`
 
-3. Add four imports at the top of `HarryPotter.ts`
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```ts
-import HarryPotter_Cover from "./HarryPotter_Cover.jpg";
-import HarryPotter_PDF from "./HarryPotter_PDF.pdf";
-import HarryPotter_Kindle from "./HarryPotter_Kindle.mobi";
-import HarryPotter_EPUB from "./HarryPotter_EPUB.epub";
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-4. And now, create a `HarryPotter` object and fill it with details about your book
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```ts
-const HarryPotter = {
-  title: "Harry Potter Saga",
-  author: "J.K. Rowling",
-  category: "Fantasy Fiction",
-  language: "english",
-  description: "...",
-  summary: "...",
-  /* link your imported files here */
-  cover: HarryPotter_Cover, 
-  downloadPDF: HarryPotter_PDF,
-  downloadKindle: HarryPotter_Kindle,
-  downloadEPUB: HarryPotter_EPUB,
-}
+### `npm run eject`
 
-export default HarryPotter;
-```
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-5. Go to src/assets/library.ts and import your `HarryPotter` object. Finally, add it in the LIBRARY array and you're done!
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
