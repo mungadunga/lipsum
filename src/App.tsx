@@ -23,14 +23,14 @@ function App() {
         <header id={styles.Header}>
           <h1>Lipsum Dosimet</h1>
           <div id={styles.HeaderContainer}>
-            <Link to="/"><span className="Link">Home</span></Link>
+            <Link to="/home"><span className="Link">Home</span></Link>
             <Link to="/ebooks" className="Link">Ebooks</Link>
             <Link to="/info" className="Link">Info</Link>
             <Link to="/socialmedia" className="Link">Social Media</Link>
           </div>
         </header>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route path="/home" component={Home} />
           <Route path="/ebooks" component={Ebooks} />
           <Route path="/info" component={Info} />
           <Route path="/socialmedia" component={SocialMedia} />
