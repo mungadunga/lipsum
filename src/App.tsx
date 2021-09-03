@@ -30,7 +30,7 @@ function App() {
           </div>
         </header>
         <Switch>
-          <Route path="/home" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route path="/ebooks" component={Ebooks} />
           <Route path="/info" component={Info} />
           <Route path="/socialmedia" component={SocialMedia} />
