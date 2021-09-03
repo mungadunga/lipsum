@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lipsum/static/css/main.95ffd858.chunk.css",
-    "main.js": "/lipsum/static/js/main.9dee0fd0.chunk.js",
-    "main.js.map": "/lipsum/static/js/main.9dee0fd0.chunk.js.map",
+    "main.js": "/lipsum/static/js/main.5477f5a1.chunk.js",
+    "main.js.map": "/lipsum/static/js/main.5477f5a1.chunk.js.map",
     "runtime-main.js": "/lipsum/static/js/runtime-main.9c2e86b8.js",
     "runtime-main.js.map": "/lipsum/static/js/runtime-main.9c2e86b8.js.map",
     "static/js/2.c2e7b50e.chunk.js": "/lipsum/static/js/2.c2e7b50e.chunk.js",
@@ -47,6 +47,6 @@
     "static/js/runtime-main.9c2e86b8.js",
     "static/js/2.c2e7b50e.chunk.js",
     "static/css/main.95ffd858.chunk.css",
-    "static/js/main.9dee0fd0.chunk.js"
+    "static/js/main.5477f5a1.chunk.js"
   ]
 }
