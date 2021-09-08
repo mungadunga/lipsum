@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/lipsum/static/css/main.95ffd858.chunk.css",
-    "main.js": "/lipsum/static/js/main.5477f5a1.chunk.js",
-    "main.js.map": "/lipsum/static/js/main.5477f5a1.chunk.js.map",
+    "main.js": "/lipsum/static/js/main.beb2f82f.chunk.js",
+    "main.js.map": "/lipsum/static/js/main.beb2f82f.chunk.js.map",
     "runtime-main.js": "/lipsum/static/js/runtime-main.9c2e86b8.js",
     "runtime-main.js.map": "/lipsum/static/js/runtime-main.9c2e86b8.js.map",
-    "static/js/2.c2e7b50e.chunk.js": "/lipsum/static/js/2.c2e7b50e.chunk.js",
-    "static/js/2.c2e7b50e.chunk.js.map": "/lipsum/static/js/2.c2e7b50e.chunk.js.map",
+    "static/js/2.d9b99a49.chunk.js": "/lipsum/static/js/2.d9b99a49.chunk.js",
+    "static/js/2.d9b99a49.chunk.js.map": "/lipsum/static/js/2.d9b99a49.chunk.js.map",
     "index.html": "/lipsum/index.html",
     "static/css/main.95ffd858.chunk.css.map": "/lipsum/static/css/main.95ffd858.chunk.css.map",
-    "static/js/2.c2e7b50e.chunk.js.LICENSE.txt": "/lipsum/static/js/2.c2e7b50e.chunk.js.LICENSE.txt",
+    "static/js/2.d9b99a49.chunk.js.LICENSE.txt": "/lipsum/static/js/2.d9b99a49.chunk.js.LICENSE.txt",
     "static/media/CrankPalace_Cover.2c36321c.jpg": "/lipsum/static/media/CrankPalace_Cover.2c36321c.jpg",
     "static/media/CrankPalace_EPUB.9a6bd5d4.epub": "/lipsum/static/media/CrankPalace_EPUB.9a6bd5d4.epub",
     "static/media/CrankPalace_Kindle.97284a56.mobi": "/lipsum/static/media/CrankPalace_Kindle.97284a56.mobi",
@@ -30,6 +30,7 @@
     "static/media/NewYork2140_EPUB.1f93a160.epub": "/lipsum/static/media/NewYork2140_EPUB.1f93a160.epub",
     "static/media/NewYork2140_Kindle.d9e96903.mobi": "/lipsum/static/media/NewYork2140_Kindle.d9e96903.mobi",
     "static/media/NewYork2140_PDF.12493de7.pdf": "/lipsum/static/media/NewYork2140_PDF.12493de7.pdf",
+    "static/media/README_copy.f992ac0f.md": "/lipsum/static/media/README_copy.f992ac0f.md",
     "static/media/TheDeathCure_Cover.2b0ec000.jpg": "/lipsum/static/media/TheDeathCure_Cover.2b0ec000.jpg",
     "static/media/TheDeathCure_EPUB.bbc8f13e.epub": "/lipsum/static/media/TheDeathCure_EPUB.bbc8f13e.epub",
     "static/media/TheDeathCure_Kindle.724688f6.mobi": "/lipsum/static/media/TheDeathCure_Kindle.724688f6.mobi",
@@ -45,8 +46,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9c2e86b8.js",
-    "static/js/2.c2e7b50e.chunk.js",
+    "static/js/2.d9b99a49.chunk.js",
     "static/css/main.95ffd858.chunk.css",
-    "static/js/main.5477f5a1.chunk.js"
+    "static/js/main.beb2f82f.chunk.js"
   ]
 }
