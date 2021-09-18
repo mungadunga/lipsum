@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/lipsum/static/css/main.95ffd858.chunk.css",
-    "main.js": "/lipsum/static/js/main.beb2f82f.chunk.js",
-    "main.js.map": "/lipsum/static/js/main.beb2f82f.chunk.js.map",
+    "main.css": "/lipsum/static/css/main.88bf79b0.chunk.css",
+    "main.js": "/lipsum/static/js/main.5517984f.chunk.js",
+    "main.js.map": "/lipsum/static/js/main.5517984f.chunk.js.map",
     "runtime-main.js": "/lipsum/static/js/runtime-main.9c2e86b8.js",
     "runtime-main.js.map": "/lipsum/static/js/runtime-main.9c2e86b8.js.map",
-    "static/js/2.d9b99a49.chunk.js": "/lipsum/static/js/2.d9b99a49.chunk.js",
-    "static/js/2.d9b99a49.chunk.js.map": "/lipsum/static/js/2.d9b99a49.chunk.js.map",
+    "static/js/2.56d6f6e7.chunk.js": "/lipsum/static/js/2.56d6f6e7.chunk.js",
+    "static/js/2.56d6f6e7.chunk.js.map": "/lipsum/static/js/2.56d6f6e7.chunk.js.map",
     "index.html": "/lipsum/index.html",
-    "static/css/main.95ffd858.chunk.css.map": "/lipsum/static/css/main.95ffd858.chunk.css.map",
-    "static/js/2.d9b99a49.chunk.js.LICENSE.txt": "/lipsum/static/js/2.d9b99a49.chunk.js.LICENSE.txt",
+    "static/css/main.88bf79b0.chunk.css.map": "/lipsum/static/css/main.88bf79b0.chunk.css.map",
+    "static/js/2.56d6f6e7.chunk.js.LICENSE.txt": "/lipsum/static/js/2.56d6f6e7.chunk.js.LICENSE.txt",
     "static/media/CrankPalace_Cover.2c36321c.jpg": "/lipsum/static/media/CrankPalace_Cover.2c36321c.jpg",
     "static/media/CrankPalace_EPUB.9a6bd5d4.epub": "/lipsum/static/media/CrankPalace_EPUB.9a6bd5d4.epub",
     "static/media/CrankPalace_Kindle.97284a56.mobi": "/lipsum/static/media/CrankPalace_Kindle.97284a56.mobi",
@@ -46,8 +46,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9c2e86b8.js",
-    "static/js/2.d9b99a49.chunk.js",
-    "static/css/main.95ffd858.chunk.css",
-    "static/js/main.beb2f82f.chunk.js"
+    "static/js/2.56d6f6e7.chunk.js",
+    "static/css/main.88bf79b0.chunk.css",
+    "static/js/main.5517984f.chunk.js"
   ]
 }
