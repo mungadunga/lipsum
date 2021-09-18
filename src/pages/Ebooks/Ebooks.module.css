@@ -17,9 +17,11 @@
 #title {
    margin: 1em;
 }
-#p {
+#fullPage {
+   transition: 500ms;
+   display: flex;
+   justify-content: center;
    background: rgb(255, 255, 255);
-   opacity: 1;
    position: fixed;
    z-index: 1;
    /* top: 0px; */
