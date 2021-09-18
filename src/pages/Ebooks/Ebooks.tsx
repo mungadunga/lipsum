@@ -1,5 +1,5 @@
 // essentials
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './Ebooks.module.css';
 
 // components
@@ -11,10 +11,16 @@ const Ebooks = () => {
   const [ filter, setFilter ] = useState("");
   const [ keyword, setKeyword ] = useState("title");
   const [ sort, setSort ] = useState(null);
+  // loading
+  const [ loading, setLoading ] = useState(true);
+  const LoadingScreen = (
+    <p id={styles.p}>Loading...</p>
+  )
 
   return (
     <>
-      <div className={styles.ebooks}>
+      {loading && LoadingScreen}
+      <div className={styles.ebooks} onLoad={() => setLoading(false)}>
         <h2 id={styles.title}>Ebooks</h2>
         <SearchBar
           onChange={{
