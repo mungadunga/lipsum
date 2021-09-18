@@ -1,4 +1,4 @@
-// essentials
+import { useState } from "react";
 import styles from "./styles/App.module.css";
 import "./styles/global.css";
 
@@ -8,38 +8,28 @@ import Home from "./pages/Home/Home";
 import Info from "./pages/Info/Info";
 import SocialMedia from "./pages/SocialMedia/SocialMedia";
 
-// Router
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// components
+import Link from "./components/Link/Link";
 
 function App() {
+  const switchPageHandler = (newValue: JSX.Element) => setPage(newValue); // This allows the child component <Home /> to modify it's parent's page state. In short, the 'get started' button will switch to the ebooks tab.
+  const [page, setPage] = useState(<Home />);
+
   return (
-    <Router>
+    <>
+      <header id={styles.Header}>
+        <h1>Lipsum Dosimet</h1>
+        <div id={styles.HeaderContainer}>
+          <Link className="Link" switchPageHandler={switchPageHandler} to={<Home />}>Home</Link>
+          <Link className="Link" switchPageHandler={switchPageHandler} to={<Ebooks />}>Ebooks</Link>
+          <Link className="Link" switchPageHandler={switchPageHandler} to={<Info />}>Info</Link>
+          <Link className="Link" switchPageHandler={switchPageHandler} to={<SocialMedia />}>Social Media</Link>
+        </div>
+      </header>
       <div>
-        <header id={styles.Header}>
-          <h1>Lipsum Dosimet</h1>
-          <div id={styles.HeaderContainer}>
-            <Link to={process.env.PUBLIC_URL + "/home"} className="Link">Home</Link>
-            <Link to={process.env.PUBLIC_URL + "/ebooks"} className="Link">Ebooks</Link>
-            <Link to={process.env.PUBLIC_URL + "/info"} className="Link">Info</Link>
-            <Link to={process.env.PUBLIC_URL + "/socialmedia"} className="Link">Social Media</Link>
-          </div>
-        </header>
-        <Switch>
-          <Route exact path={process.env.PUBLIC_URL + "/"}>
-            <Home />
-          </Route>
-          <Route path={process.env.PUBLIC_URL + "/home"} component={Home} />
-          <Route path={process.env.PUBLIC_URL + "/ebooks"} component={Ebooks} />
-          <Route path={process.env.PUBLIC_URL + "/info"} component={Info} />
-          <Route path={process.env.PUBLIC_URL + "/socialmedia"} component={SocialMedia} />
-        </Switch>
+        {page}
       </div>
-    </Router>
+    </>
   );
 }
 

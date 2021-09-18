@@ -1,22 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 :root {
-   --main-theme: #eb4034;
+  --main-theme: #eb4034;
 }
 body {
-   font-family: "Source Sans Pro", sans-serif;
-   overflow-x: hidden;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
+html {
+  overflow-y: scroll;
 }
 code {
-   background-color: #eee;
-   border-radius: 3px;
-   font-family: courier, monospace;
-   padding: 0 3px;
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
 }
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .Link {
    text-decoration: none;
    color: var(--main-theme);
    font-weight: bold;
-}
-.Link:hover {
+ }
+ .Link:hover {
    text-decoration: underline;
-}
+   cursor: pointer;
+ }
+ 
