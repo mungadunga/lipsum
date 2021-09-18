@@ -8,3 +8,28 @@
 #HomeGreeting h2 {
    font-weight: 100;
 }
+#newestReleases {
+   display: grid;
+   grid-template-columns: repeat(2, 15em);
+   justify-content: center;
+}
+@media(max-width: 600px){
+   #newestReleases {
+      grid-template-columns: repeat(2, 12.5em);
+   }
+}
+@media(max-width: 400px){
+   #newestReleases {
+      grid-template-columns: repeat(2, 10em);
+   }
+}
+@media(max-width: 300px){
+   #newestReleases {
+      grid-template-columns: repeat(2, 8.5em);
+   }
+}
+@media(max-width: 280px){
+   #newestReleases {
+      grid-template-columns: repeat(2, 8em);
+   }
+}
