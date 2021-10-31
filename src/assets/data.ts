@@ -44,7 +44,7 @@ interface iCollection {
    books: iBook[];
 }
 
-const LIBRARY: iBook[] = [
+const DATA: iBook[] = [
    /* english */
    NewYork2140,
    HarryPotterSaga,
@@ -58,4 +58,4 @@ const LIBRARY: iBook[] = [
    HungerGames
 ]
 
-export default LIBRARY;
+export default DATA;

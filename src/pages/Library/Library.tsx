@@ -3,7 +3,7 @@ import { useState } from 'react';
 import styles from './Library.module.css';
 
 // components
-import LIBRARY from '../../assets/library';
+import DATA from '../../assets/data';
 import Ebook from '../../components/Ebook/Ebook';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import LoadingWheel from '../../components/LoadingWheel/LoadingWheel';
@@ -37,7 +37,7 @@ const Library = () => {
         />
         <div id={styles.libraryContainer}>
           {
-            LIBRARY
+            DATA
             .filter(elem => elem[keyword]
             .toLowerCase()?.includes(filter.toLowerCase()))
             .sort((a, b) => sort ? ('' + a[keyword])

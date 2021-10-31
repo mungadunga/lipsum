@@ -1,4 +1,4 @@
-Finally, go to src/assets/library.ts and import your `HarryPotter` object. Finally, add it in the LIBRARY array and you're done!
+Finally, go to src/assets/data.ts and import your `HarryPotter` object. Finally, add it in the DATA array and you're done!
 
 # How to add markdown to this page
 

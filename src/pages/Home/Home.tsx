@@ -1,10 +1,10 @@
 import styles from './Home.module.css';
-import LIBRARY from '../../assets/library';
+import DATA from '../../assets/data';
 import Ebook from '../../components/Ebook/Ebook';
 
 const Home = () => {
 
-  const newestReleases = LIBRARY.slice(-2);
+  const newestReleases = DATA.slice(-2);
 
   return (
     <div className={styles.home}>
