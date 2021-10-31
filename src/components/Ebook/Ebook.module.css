@@ -2,11 +2,10 @@
    margin: 1em;
    border: 2px solid black;
 }
-@media(max-width: 400px){
-   #ebook {
-      margin: 0.5em;
-   }
-}
+
+@media(max-width: 400px){ #ebook { margin: 0.4em; } }
+@media(min-width: 400px){ #ebook { margin: 0.5em; } }
+
 #ebook:hover {
    background-color:rgba(150,150,150,0.5);
    user-select: none;

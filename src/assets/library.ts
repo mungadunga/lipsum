@@ -10,6 +10,19 @@ import HungerGamesTrilogy from "./eBooks/english/HungerGamesTrilogy/HungerGamesT
 // french
 import HungerGames from "./eBooks/french/HungerGames/HungerGames";
 
+// import CollectionCover from "./eBooks/english/NewYork2140/NewYork2140_Cover.jpg";
+// let Collection1: iCollection = {
+//    title: "myFirstCollection!",
+//    author: "someGuy",
+//    cover: CollectionCover,
+//    language: "English",
+//    books: [
+//       NewYork2140,
+//       TheMazeRunner,
+//       TheScorchTrials
+//    ]
+// }
+
 interface iBook {
    title: string;
    author: string;
@@ -21,6 +34,14 @@ interface iBook {
    downloadPDF: any;
    downloadKindle: any;
    downloadEPUB: any;
+}
+
+interface iCollection {
+   title: string;
+   author: string;
+   cover: any;
+   language: string;
+   books: iBook[];
 }
 
 const LIBRARY: iBook[] = [
