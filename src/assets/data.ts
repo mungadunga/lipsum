@@ -6,26 +6,19 @@ import TheScorchTrials from "./eBooks/english/TheScorchTrials/TheScorchTrials";
 import TheDeathCure from "./eBooks/english/TheDeathCure/TheDeathCure";
 import CrankPalace from "./eBooks/english/CrankPalace/CrankPalace";
 import HungerGamesTrilogy from "./eBooks/english/HungerGamesTrilogy/HungerGamesTrilogy";
+import TheLightningThief from "./eBooks/english/PercyJackson/TheLightningThief/01 the_lightning_thief";
+import TheSeaOfMonsters from "./eBooks/english/PercyJackson/TheSeaOfMonsters/02 the_sea_of_monsters";
+import TheTitansCurse from "./eBooks/english/PercyJackson/TheTitansCurse/03 the-titans-curse";
+import TheBattleOfTheLabyrinth from "./eBooks/english/PercyJackson/TheBattleOfTheLabyrinth/04 the_battle_of_the_labyrinth";
+import TheLastOlympian from "./eBooks/english/PercyJackson/TheLastOlympian/05 the_last_olympian";
 
 // french
-import HungerGames from "./eBooks/french/HungerGames/HungerGames";
-
-// import CollectionCover from "./eBooks/english/NewYork2140/NewYork2140_Cover.jpg";
-// let Collection1: iCollection = {
-//    title: "myFirstCollection!",
-//    author: "someGuy",
-//    cover: CollectionCover,
-//    language: "English",
-//    books: [
-//       NewYork2140,
-//       TheMazeRunner,
-//       TheScorchTrials
-//    ]
-// }
+import Fr_HungerGames from "./eBooks/french/Fr_HungerGames/Fr_HungerGames";
 
 interface iBook {
    title: string;
    author: string;
+   collection?: string;
    category: string;
    language: string;
    description: string;
@@ -34,14 +27,6 @@ interface iBook {
    downloadPDF: any;
    downloadKindle: any;
    downloadEPUB: any;
-}
-
-interface iCollection {
-   title: string;
-   author: string;
-   cover: any;
-   language: string;
-   books: iBook[];
 }
 
 const DATA: iBook[] = [
@@ -53,9 +38,12 @@ const DATA: iBook[] = [
    TheDeathCure,
    CrankPalace,
    HungerGamesTrilogy,
-
-   /* french */
-   HungerGames
+   Fr_HungerGames,
+   TheLightningThief,
+   TheSeaOfMonsters,
+   TheTitansCurse,
+   TheBattleOfTheLabyrinth,
+   TheLastOlympian,
 ]
 
 export default DATA;

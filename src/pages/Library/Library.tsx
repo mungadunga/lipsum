@@ -38,8 +38,7 @@ const Library = () => {
         <div id={styles.libraryContainer}>
           {
             DATA
-            .filter(elem => elem[keyword]
-            .toLowerCase()?.includes(filter.toLowerCase()))
+            .filter(elem => elem[keyword] && elem[keyword].toLowerCase()?.includes(filter.toLowerCase()))
             .sort((a, b) => sort ? ('' + a[keyword])
             .localeCompare(b[ keyword ]) : null)
             .map(elem => (

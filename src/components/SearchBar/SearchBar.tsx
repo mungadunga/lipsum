@@ -22,6 +22,7 @@ const SearchBar = (props: props) => {
         <select onChange={props.onChange.onSelectChange} defaultValue={"title"} className={styles.element} id={styles.select}>
           <option value="title">Title</option>
           <option value="author">Author</option>
+          <option value="collection">Collection</option>
           <option value="language">Language</option>
         </select>
         {/* sorting button  */}
